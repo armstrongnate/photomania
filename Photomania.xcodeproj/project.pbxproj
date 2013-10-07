@@ -30,6 +30,7 @@
 		4363294B17FBD3CF0070F766 /* PhotographersCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363294A17FBD3CF0070F766 /* PhotographersCDTVC.m */; };
 		4363294F17FBD64A0070F766 /* DemoPhotographersCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363294E17FBD64A0070F766 /* DemoPhotographersCDTVC.m */; };
 		4363295117FBD8FE0070F766 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363295017FBD8FE0070F766 /* CoreData.framework */; };
+		43632954180313080070F766 /* PhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43632953180313080070F766 /* PhotosTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		4363294D17FBD64A0070F766 /* DemoPhotographersCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoPhotographersCDTVC.h; path = Controllers/DemoPhotographersCDTVC.h; sourceTree = "<group>"; };
 		4363294E17FBD64A0070F766 /* DemoPhotographersCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoPhotographersCDTVC.m; path = Controllers/DemoPhotographersCDTVC.m; sourceTree = "<group>"; };
 		4363295017FBD8FE0070F766 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		43632952180313080070F766 /* PhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosTVC.h; path = Controllers/PhotosTVC.h; sourceTree = "<group>"; };
+		43632953180313080070F766 /* PhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosTVC.m; path = Controllers/PhotosTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +215,8 @@
 		4363294C17FBD3D30070F766 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				43632952180313080070F766 /* PhotosTVC.h */,
+				43632953180313080070F766 /* PhotosTVC.m */,
 				4363294917FBD3CF0070F766 /* PhotographersCDTVC.h */,
 				4363294A17FBD3CF0070F766 /* PhotographersCDTVC.m */,
 				4363294D17FBD64A0070F766 /* DemoPhotographersCDTVC.h */,
@@ -317,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43632954180313080070F766 /* PhotosTVC.m in Sources */,
 				436328F717FBC8B50070F766 /* AppDelegate.m in Sources */,
 				436328F317FBC8B50070F766 /* main.m in Sources */,
 				4363294117FBCE790070F766 /* CoreDataTableViewController.m in Sources */,
