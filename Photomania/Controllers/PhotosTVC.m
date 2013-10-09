@@ -45,4 +45,13 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"setImageURL:"]) {
+        if ([segue.destinationViewController respondsToSelector:@selector(setImageURL:)]) {
+            NSString *url = [[self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForCell:(UITableViewCell *)sender]] valueForKey:@"imageURL"];
+            [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
+        }
+    }
+}
+
 @end

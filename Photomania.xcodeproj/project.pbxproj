@@ -31,6 +31,7 @@
 		4363294F17FBD64A0070F766 /* DemoPhotographersCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363294E17FBD64A0070F766 /* DemoPhotographersCDTVC.m */; };
 		4363295117FBD8FE0070F766 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363295017FBD8FE0070F766 /* CoreData.framework */; };
 		43632954180313080070F766 /* PhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43632953180313080070F766 /* PhotosTVC.m */; };
+		436329571804D4BF0070F766 /* PhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 436329561804D4BF0070F766 /* PhotoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		4363295017FBD8FE0070F766 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		43632952180313080070F766 /* PhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosTVC.h; path = Controllers/PhotosTVC.h; sourceTree = "<group>"; };
 		43632953180313080070F766 /* PhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosTVC.m; path = Controllers/PhotosTVC.m; sourceTree = "<group>"; };
+		436329551804D4BF0070F766 /* PhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoVC.h; path = Controllers/PhotoVC.h; sourceTree = "<group>"; };
+		436329561804D4BF0070F766 /* PhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoVC.m; path = Controllers/PhotoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,8 @@
 		4363294C17FBD3D30070F766 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				436329551804D4BF0070F766 /* PhotoVC.h */,
+				436329561804D4BF0070F766 /* PhotoVC.m */,
 				43632952180313080070F766 /* PhotosTVC.h */,
 				43632953180313080070F766 /* PhotosTVC.m */,
 				4363294917FBD3CF0070F766 /* PhotographersCDTVC.h */,
@@ -328,6 +333,7 @@
 				4363294117FBCE790070F766 /* CoreDataTableViewController.m in Sources */,
 				4363294F17FBD64A0070F766 /* DemoPhotographersCDTVC.m in Sources */,
 				4363294417FBD1320070F766 /* Photographer+Create.m in Sources */,
+				436329571804D4BF0070F766 /* PhotoVC.m in Sources */,
 				4363293E17FBCE520070F766 /* FlickrFetcher.m in Sources */,
 				4363293317FBCD440070F766 /* Photo.m in Sources */,
 				4363293917FBCD870070F766 /* Photo+Flickr.m in Sources */,

@@ -67,11 +67,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo" textLabel="htQ-Vp-I7z" detailTextLabel="9UK-I5-UKd" style="IBUITableViewCellStyleSubtitle" id="GS6-u7-SHM">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo" textLabel="htQ-Vp-I7z" detailTextLabel="9UK-I5-UKd" style="IBUITableViewCellStyleSubtitle" id="GS6-u7-SHM">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GS6-u7-SHM" id="H2Z-xL-Syg">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="htQ-Vp-I7z">
@@ -90,6 +90,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="nvx-up-hcQ" kind="push" identifier="setImageURL:" id="dJJ-FW-hSz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -103,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="1021" y="158"/>
         </scene>
-        <!--View Controller-->
+        <!--PhotoVC-->
         <scene sceneID="jP6-jo-Nbo">
             <objects>
-                <viewController id="nvx-up-hcQ" sceneMemberID="viewController">
+                <viewController id="nvx-up-hcQ" customClass="PhotoVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YEv-y0-hlE"/>
                         <viewControllerLayoutGuide type="bottom" id="7Fu-m3-BmD"/>
@@ -114,8 +117,18 @@
                     <view key="view" contentMode="scaleToFill" id="DHX-TN-TeH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAd-jc-4Pe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tzy-ef-0yr"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="KAd-jc-4Pe" id="icp-39-ism"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbD-q9-1KT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
